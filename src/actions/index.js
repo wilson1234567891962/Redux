@@ -14,6 +14,7 @@ export function closeModal() {
     type: 'CLOSE_MODAL',
   }
 }
+
 export function searchEntities(query) {
   return {
     type: 'SEARCH_ENTITIES',
