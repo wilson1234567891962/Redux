@@ -5,12 +5,14 @@ import Home from '../pages/containers/home';
 import data from '../api.json';
 // console.log('Hola mundo!' )
 import { Provider } from 'react-redux';
-import reducer from '../reducers/data.js'
+
 import { createStore } from 'redux';
+import reducer from '../reducers/data';
 
 const initialState = {
   data: {
-    ...data
+    ...data,
+    search: [],
   }
 }
 
