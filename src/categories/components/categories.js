@@ -10,11 +10,11 @@ function Categories(props) {
       <Search />
       {
         props.search.map((item) => {
-          return <Media {...item} key={item.id} />
+          return <Media {...item} key={item.id}/>
         })
       }
       {
-        props.categories.map((item) => {
+        props.categories.map((item) =>{
           return (
             <Category
               key={item.id}

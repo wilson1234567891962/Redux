@@ -6,10 +6,9 @@ function data(state, action) {
       if (action.payload.query) {
         const list = state.data.categories[2].playlist;
         results = list.filter((item) => {
-          return item.author.toLowerCase().includes(action.payload.query.toLowerCase())
+          return item.author.includes(action.payload.query)
         })
       }
-
       return {
         ...state,
         search: results
